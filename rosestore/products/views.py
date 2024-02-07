@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+from .models import Flower, Product
 
-# Create your views here.
+# APIs
+def home(request):
+    return HttpResponse(Flower.objects.all())
+
+def products(request):
+    return HttpResponse(Product.objects.all())
