@@ -7,6 +7,8 @@ from .models import (
     Houseplant
 )
 
+
+
 admin.site.register(Package)
 admin.site.register(Product)
 admin.site.register(Flower)
